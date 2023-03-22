@@ -4,9 +4,8 @@ import {
     ReloadOutlined,
     WarningOutlined,
   } from '@ant-design/icons'
-  import {Button, Typography} from 'antd'
+  import {Button, Typography, Space} from 'antd'
   import React from 'react'
-  import Stack from '../Stack'
   
   export interface ErrorPageI {
     title?: string
@@ -22,7 +21,7 @@ import {
     icon = 'error',
   }: ErrorPageI) {
     return (
-      <Stack variant="column" style={{background: '#fff', padding: 20}}>
+      <Space orientation="vertical" style={{background: '#fff', padding: 20}}>
         {icon === 'caution' && (
           <WarningOutlined size={100} style={{fontSize: 100}} color="gold-6" />
         )}
@@ -58,7 +57,7 @@ import {
             Refresh
           </Button>
         )}
-      </Stack>
+      </Space>
     )
   }
   
