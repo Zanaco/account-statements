@@ -2,8 +2,7 @@ import React, {lazy, Suspense} from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import NotFound from './NotFound'
 import {ErrorBoundary} from '../components/common/ErrorBoundary'
-import BaseSkeleton from './layouts/BaseSkeleton'
-import ContractException from './Admin/ContractException'
+import BaseSkeleton from './Layouts/BaseSkeleton'
 
 const BaseLayout = lazy(() => import('./layouts/BaseLayout'))
 const Inbox = lazy(() => import('./Inbox'))
