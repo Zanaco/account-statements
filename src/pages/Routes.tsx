@@ -16,7 +16,7 @@ export default function ProjectRoutes() {
             <Route path="/" element={<BaseLayout />}>
               <Route index path="/login" element={<Login />} />
               <Route path="statement">
-                <Route path="history" element={<Login type="personal" />} />
+                <Route path="history" element={<Login />} />
                 <Route path="request" element={<Login />} />
               </Route>
               <Route path="admin">
