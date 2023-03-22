@@ -1,20 +1,19 @@
 import React from 'react'
-import {Button} from 'antd'
+import {Button, Space} from 'antd'
 import {BackwardOutlined} from '@ant-design/icons'
 import {useNavigate} from 'react-router-dom'
-import Stack from '../../components/common/Stack'
 import lost from '../../assets/404.svg'
 import {RegularText, SectionHeader} from '../../components/common/Text'
 
 export default function NotFound() {
   const navigate = useNavigate()
   return (
-    <Stack className="base-container" variant="row">
+    <Space className="base-container" direction="horizontal">
       <div className="f-1">
         <img src={lost} alt="lost" />
       </div>
       <div className="f-2">
-        <Stack variant="column">
+        <Space orientation="vertical">
           <SectionHeader style={{marginBottom: '2.0em'}}>
             Page Not Found
           </SectionHeader>
@@ -29,8 +28,8 @@ export default function NotFound() {
             icon={<BackwardOutlined style={{fontSize: '1.2rem'}} />}>
             GO BACK
           </Button>
-        </Stack>
+        </Space>
       </div>
-    </Stack>
+    </Space>
   )
 }
