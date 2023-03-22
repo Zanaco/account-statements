@@ -21,7 +21,7 @@ import {
     icon = 'error',
   }: ErrorPageI) {
     return (
-      <Space orientation="vertical" style={{background: '#fff', padding: 20}}>
+      <Space directiontion="vertical" style={{background: '#fff', padding: 20}}>
         {icon === 'caution' && (
           <WarningOutlined size={100} style={{fontSize: 100}} color="gold-6" />
         )}
