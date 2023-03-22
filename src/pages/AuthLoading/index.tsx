@@ -2,7 +2,7 @@ import {InteractionStatus} from '@azure/msal-browser'
 import {useIsAuthenticated, useMsal} from '@azure/msal-react'
 import React, {Suspense} from 'react'
 import {ErrorBoundary} from '../../components/common/ErrorBoundary'
-import BaseSkeleton from '../../Layouts/BaseSkeleton'
+import BaseSkeleton from '../Layouts/BaseSkeleton'
 import Login from '../Login'
 import ProjectRoutes from '../Routes'
 
