@@ -13,7 +13,7 @@ export default function NotFound() {
         <img src={lost} alt="lost" />
       </div>
       <div className="f-2">
-        <Space orientation="vertical">
+        <Space direction="vertical">
           <SectionHeader style={{marginBottom: '2.0em'}}>
             Page Not Found
           </SectionHeader>
