@@ -4,8 +4,8 @@ import NotFound from './NotFound'
 import {ErrorBoundary} from '../components/common/ErrorBoundary'
 import BaseSkeleton from './Layouts/BaseSkeleton'
 
-const BaseLayout = lazy(() => import('./layouts/BaseLayout'))
-const Inbox = lazy(() => import('./Inbox'))
+const BaseLayout = lazy(() => import('./Layouts/BaseLayout'))
+const Login = lazy(() => import('./Login'))
 
 export default function ProjectRoutes() {
   return (
@@ -14,14 +14,14 @@ export default function ProjectRoutes() {
         <Router>
           <Routes>
             <Route path="/" element={<BaseLayout />}>
-              <Route index path="/login" element={<Inbox />} />
+              <Route index path="/login" element={<Login />} />
               <Route path="statement">
-                <Route path="history" element={<Inbox type="personal" />} />
-                <Route path="request" element={<Inbox />} />
+                <Route path="history" element={<Login type="personal" />} />
+                <Route path="request" element={<Login />} />
               </Route>
               <Route path="admin">
-                <Route index path="history" element={<Inbox />} />
-                <Route index path="reports" element={<Inbox />} />
+                <Route index path="history" element={<Login />} />
+                <Route index path="reports" element={<Login />} />
               </Route>
             </Route>
             <Route path="*" element={<NotFound />} />
