@@ -6,6 +6,7 @@ import BaseSkeleton from './Layouts/BaseSkeleton'
 
 const BaseLayout = lazy(() => import('./Layouts/BaseLayout'))
 const Login = lazy(() => import('./Login'))
+const ValidateOTP = lazy(() => import('./ValidateOTP'))
 
 export default function ProjectRoutes() {
   return (
@@ -15,6 +16,7 @@ export default function ProjectRoutes() {
           <Routes>
             <Route path="/" element={<BaseLayout />}>
               <Route index path="/login" element={<Login />} />
+              <Route index path="/validate" element={<ValidateOTP />} />
               <Route path="statement">
                 <Route path="history" element={<Login />} />
                 <Route path="request" element={<Login />} />
