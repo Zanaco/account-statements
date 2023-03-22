@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'TrasandinaBold';
+    src: local('MyFont'),
+      url(./assets/fonts/TrasandinaBold.otf) format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'TrasandinaBook';
+    src: local('MyFont'),
+      url(./assets/fonts/TrasandinaBook.otf) format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'TrasandinaLight';
+    src: local('MyFont'),
+      url(./assets/fonts/TrasandinaLight.otf) format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'TrasandinaRegular';
+    src: local('MyFont'),
+      url(./assets/fonts/TrasandinaRegular.otf) format('opentype');
+  }
+  
+  // * {
+  //   font-family: 'TrasandinaRegular', 'TrasandinaBook', 'TrasandinaBold';
+  // }
+  
+  body {
+    margin: 0;
+    font-family: 'TrasandinaBook', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+      'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
