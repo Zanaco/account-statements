@@ -1,22 +1,37 @@
 import React from 'react'
-import {Skeleton, Card} from 'antd'
+import {Skeleton, Card, Layout, Space, Typography} from 'antd'
+
+// import 'antd/dist/antd.css';
+const {Text} = Typography
+const {Header, Content, Footer} = Layout
 
 export default function BaseSkeleton() {
   return (
-    <div>
-      <Skeleton.Input style={{width: '100%', height: '50px'}} active />
-      <Card style={{marginTop: 16}}>
-        <Skeleton.Input style={{width: '50%', marginBottom: 16}} active />
-        <Skeleton.Input style={{width: '50%', marginBottom: 16}} active />
-        <Skeleton.Button style={{width: '100%', marginBottom: 16}} active />
-      </Card>
-      <Skeleton.Input
-        style={{width: '100%', height: '50px', marginTop: 16}}
-        active
-      />
-      <div style={{textAlign: 'center', marginTop: 16}}>
-        <Skeleton.Button style={{width: '50%'}} active />
-      </div>
-    </div>
+    <Layout>
+      <Header style={{background: red.deep}}>
+        <Skeleton.Input style={{width: '100%', height: '50px'}} active />
+      </Header>
+      <Content style={{display: 'flex', alignSelf: 'center'}}>
+        <Card title="Self Service Portal" style={{marginTop: 16}}>
+          <Space
+            direction="vertical"
+            style={{
+              width: '300px',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}>
+            <Skeleton.Input style={{width: '250px', marginBottom: 16}} active />
+            <Skeleton.Input style={{width: '250px', marginBottom: 16}} active />
+            <Skeleton.Button style={{width: '150px'}} active />
+          </Space>
+        </Card>
+      </Content>
+      <Footer style={{textAlign: 'center', background: '#000'}}>
+        <Text style={{color: '#fff'}}>
+          © Zambia National Commercial Bank Plc
+        </Text>
+      </Footer>
+    </Layout>
   )
 }

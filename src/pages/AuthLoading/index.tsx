@@ -12,7 +12,7 @@ export default function AuthLoading() {
   const [isLoading, setIsLoading] = React.useState(false)
 
   React.useEffect(() => {
-    setIsLoading(inProgress !== InteractionStatus.None)
+    setIsLoading(inProgress === InteractionStatus.None)
   }, [inProgress])
 
   if (isLoading) {
